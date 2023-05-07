@@ -1,14 +1,15 @@
 .about-us__list{
+    
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     flex-wrap: wrap;
-    // flex-basis: calc((100% - 2 * 30px) / 3);
+    flex-basis: calc((100% - 2 * 30px) / 3);
     // visibility: hidden;
     // none
-    column-gap: 30px;
+    column-gap: 10px;
     // position: relative;
-    margin:0 auto;
-flex-basis: calc((100% - 2 * 30px) / 3);
+    // margin:0 30px;
+// flex-basis: calc((100% - 2 * 30px) / 3);
 
 }
 .about-us___photo {
@@ -42,7 +43,7 @@ max-height: 294px;
 
 .about-us__title {
     // nonoe
-    display: block;
+   
     
     // visibility: hidden;
     font-family: $fontInherit;

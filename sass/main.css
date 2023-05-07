@@ -361,12 +361,11 @@ a {
 
 .about-us__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  margin: 0 auto;
   flex-basis: calc((100% - 60px) / 3);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 
 .about-us___photo {
@@ -396,7 +395,6 @@ a {
 }
 
 .about-us__title {
-  display: block;
   font-family: inherit, sans-serif;
   font-style: normal;
   font-weight: 700;
