@@ -1,0 +1,189 @@
+.page-header {
+  
+    border-bottom: 1px solid #ececec;
+   max-height: 80px;
+   width: 100%;
+   @include tablet{
+    display: flex;
+    text-decoration: none;
+    justify-content: space-around;
+}
+}
+
+.nav{
+    display: none;
+    margin-top: 15px;
+   
+
+    @include tablet {
+        display: flex;
+      
+        
+    }
+
+&__items {
+    
+margin-left: 60px;
+    text-decoration: none;
+    
+    position: relative;
+    padding-bottom: 31px;
+}
+&__link {
+    color: $blackcolor;
+    font-family: $fontInherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    
+    
+    &:hover,
+    &:focus {
+        color: $bluecolor;
+        transition-property: color;
+        transition:$transitionColor ;
+        }
+
+        &--active{
+            color:$bluecolor;
+        }
+    }
+}
+
+
+.logo {
+    margin-top: 10px;
+    margin-left: 15px;
+ 
+    
+    
+
+&__primary-path{
+    color: $whitecolor;
+    font-family: $fontRaleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    }
+
+&__secondary-path{
+    color: $secondaryBlackColor;
+    font-family: $fontRaleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    
+    }
+}
+   
+
+.contact-svg{
+    margin-right:10px ;
+}
+
+    .contact-tel {
+        display: none;
+    margin-top: 10px;
+  
+    color:$greyColor;
+text-decoration: none;
+font-family: $fontInherit;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+@include tablet{
+  display: flex;
+}
+@include desktop {
+    margin-top:0px;
+    margin-left:30px ;
+   
+}
+
+&:hover,
+&:focus{
+    color: $bluecolor;
+transition-property:color;
+transition: $transitionColor ;
+    fill: $bluecolor;
+    transition-property:fill ;
+    transition: $transitionFill;
+    }
+}
+
+.contact-flex{
+  
+    margin-top: 46px;
+    display: none;
+    justify-content: flex-end;
+    flex-direction: column;
+    @include tablet {
+        display: flex;
+        
+    }
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+}
+
+.contact-mail {
+    @include tablet{
+        display:flex ;
+        
+    }
+    display: none;
+color: $greyColor;
+text-decoration: none;
+font-family: $fontInherit;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+
+ 
+
+
+&:hover,
+&:focus
+    {
+color: $bluecolor;
+transition-property:color ,fill;
+transition: $transitionColor, $transitionFill ;
+fill: $bluecolor;
+@include tablet{
+   
+}
+
+}
+}
+
+
+    .nav__link--active::after{ 
+    content: "";
+    background-color: $bluecolor;
+    border-radius: 2px;
+    border: 2px solid $bluecolor; 
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    }
+
+    .portfolio::after{ 
+    content: "";
+    background-color:  $bluecolor;
+    border-radius: 2px;
+    border: 2px solid $bluecolor; 
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;}
+
+
+

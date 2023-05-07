@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+body {
+    font-family: "Roboto", sans-serif;
+    color: #212121;
+    width: 100%;
+    
+}
+
+
+ul {
+list-style-type: none;
+}
+
+a {
+text-decoration: none;
+}
+
+
+.section{
+ padding-bottom: 30px;
+padding-top:60px;
+}
+.section-header{
+padding-bottom: 30px;
+padding-top:16px;
+}
+
+.container{
+
+max-width: 480px;
+margin: 0 auto;
+    @include tablet{
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    @include desktop {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+}

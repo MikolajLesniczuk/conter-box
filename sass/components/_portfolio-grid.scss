@@ -1,0 +1,112 @@
+
+.images{
+    padding-bottom: 94px;
+   
+
+&-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    @include tablet {
+        flex-basis: calc((100% - 1 * 30px) / 2);
+        gap: 28px;
+     }
+
+
+    }
+
+}
+
+.images-grid {
+    // flex-basis: calc((100% - 2 * 30px) / 3);
+    max-width: 370px;
+    cursor: pointer;
+    max-height: 404px;
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // flex-basis: calc((100% - 1 * 30px) / 2);
+column-gap: 20px;
+    }
+
+    &__label{
+  
+        border: 1px solid $thirdWhiteColor;
+        width: 370px;
+        
+
+        &--title{
+            padding-top:20px;
+            padding-left: 24px;
+            padding-bottom: 4px;
+            font-family: $fontInherit;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 2;
+            color: $blackcolor;    
+        }
+        &--chapter{
+            padding-bottom: 19px;
+            padding-left: 24px;
+            font-family: $fontInherit;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 1.87;
+            color:$greyColor;
+            }
+
+    }
+    
+    
+
+&:hover,
+&:focus {
+    box-shadow:$fourthBoxShadow;
+    cursor: pointer;
+    transition-property:box-shadow;
+    transition: $transitionBoxShadow;
+}
+
+
+  
+
+
+&__position{
+    position: relative;
+    overflow: hidden;
+}
+
+&__background{
+    position: absolute;
+    inset:0;
+    padding: 49px 45px 49px 24px;
+    background-color:rgba(33, 150, 243, 0.9); 
+    transition: $transitiontransform;
+    transform: translateY(100%);
+    pointer-events: none;
+    color:$whitecolor;
+}
+}
+.images-grid:hover .images-grid__background{
+    position: absolute;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.images-grid:hover .images-grid__description{
+font-family: $fontRoboto;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.55;
+letter-spacing: 0.03em;
+color: $whitecolor;
+transition-property:color;
+transition: $transitionColor;
+
+}
+

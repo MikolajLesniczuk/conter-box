@@ -1,0 +1,171 @@
+
+ .team-image{
+   display: block;
+    width: 100%;
+    height: auto;
+   
+   
+ }
+ 
+ .our-team {
+    position: relative;
+    background-color: $secondaryWhiteColor;
+    width: 100%;
+    @include desktop {
+        max-width: 1600px;
+       
+    }
+    
+    
+     
+&__title {
+    
+    margin-bottom: 50px;
+    font-family: $fontInherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.16;
+    text-align: center;
+    color: $blackcolor;
+}
+&__list {
+    display: flex;
+    flex-direction: column;
+    margin-left:15px;
+    margin-right:15px;
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+   
+    }
+    
+    &__photo{
+        display: block;
+        margin-top:30px ;
+     box-shadow:$secondaryBoxShadow;
+     @include tablet {
+        flex-basis: calc((100% - 1 * 30px) / 2);
+     }
+     @include desktop {
+        flex-basis: calc((100% - 3 * 30px) / 4);
+     }
+    }
+}
+    
+    .photo-label__title {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    
+    font-family:$fontInherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    color:$blackcolor;
+    }
+    
+    .photo-label__workplace {
+    padding-bottom: 16px;
+    text-align: center;
+
+    font-family: $fontInherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    
+    color:$greyColor;
+    }
+    
+     
+    
+    
+    
+
+    
+    .social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        cursor: pointer;
+      
+    
+    
+    &__elements{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        fill:$secondaryGreyColor;
+        margin-left: 10px;
+
+        &:hover,
+    &:focus
+    {
+        background-color: $bluecolor;
+        fill: $whitecolor;
+        border-radius: 50%;
+        transition-property:background-color,box-shadow,color ,fill;
+        transition: $transitionBackgroundColor, $transitionBoxShadow, $transitionColor, $transitionFill;
+    }
+    }
+    
+    
+}
+    
+    .photo-label{
+      height: 100%;
+        padding-bottom: 24px;
+        background-color: $whitecolor;
+        border-radius: 0px 0px 4px 4px;
+    
+    }
+    
+    // .photo4{
+    //     width:100% ;
+       
+    //     height: 460px;
+    //     background-image: url(../images/img4-mobile.jpg) ;
+    //     background-size: cover;
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    // }
+    // .photo5{
+    //     width:100% ;
+        
+    //     height: 460px;
+    //     background-image: url(../images/img5-mobile.jpg) ;
+    //     background-size: cover;
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    // }
+   
+    // .photo6{
+    //     width:100% ;
+        
+    //     height: 460px;
+    //     background-image: url(../images/img6-mobile.jpg) ;
+    //     background-size: cover;
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    // }
+    // .photo7{
+    //     width:100% ;
+        
+    //     height: 460px;
+    //     background-image: url(../images/img7-mobile.jpg) ;
+    //     background-size: cover;
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    // }
+   

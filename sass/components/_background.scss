@@ -1,0 +1,96 @@
+.main-upper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color:none; 
+    
+    width: 100%;
+    height: 400px;
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)), url(../images/foto-desktop/conter-box.jpeg);
+     @media (min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx) {
+     
+       background-image: url(../images/foto-desktop/conter-box.jpeg);
+     }
+
+@include tablet {
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)), url(../images/foto-desktop/conter-box.jpeg) ;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    
+      background-image: url(../images/foto-desktop/conter-box.jpeg);
+  
+}
+
+}
+
+@include desktop {
+    max-width:1600px;
+    height: 600px;
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)), url(../images/foto-desktop/conter-box.jpeg) ;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    
+      background-image: url(../images/foto-desktop/conter-box.jpeg);
+  
+}
+
+}
+
+
+
+ 
+
+
+    &__title {
+        display: block;
+        color: $whitecolor;
+        text-align: center;
+        font-size:26px;
+       
+        height: 84px;
+        margin:0 auto;
+        margin-top:20px;
+        margin-right: 100px;
+        }
+        
+}
+
+.main-upper__flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button--order {
+    cursor: pointer;
+    background-color: $bluecolor;
+    color: $whitecolor;
+    font-family:$fontInherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.87;
+    padding: 10px 41px 10px 40px;
+    text-align: center;
+    margin-right: 100px;
+    height: 50px;
+    box-shadow: $primaryBoxShadow;
+    border-radius: 4px;
+    border:none;
+}
+
+
