@@ -10,15 +10,46 @@
     // position: relative;
     // margin:0 30px;
 // flex-basis: calc((100% - 2 * 30px) / 3);
+@include tablet {
+ 
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 2 * 30px) / 3);
+    // visibility: hidden;
+    // none
+    column-gap: 10px;
+}
+
+@include desktop {
+    margin: 0 auto;
+    max-width: 1200px;
+}
 
 }
 .about-us___photo {
+    // flex-basis: calc((100% - 2 * 30px) / 3);
+position: relative;
+max-width: 450px;
+// max-height: 294px;
+width: 95%;
+height: auto;
+margin-bottom: 20px;
+    @include tablet {
 flex-basis: calc((100% - 2 * 30px) / 3);
 position: relative;
-max-width: 370px;
-max-height: 294px;
+width: 370px;
+height: 294px; 
+
+}
+
+@include desktop{
+    margin: 0 auto;
+}
+
 
 &--label{
+
     font-family: $fontRoboto;
     font-style: normal;
     font-weight: 700;
@@ -29,20 +60,58 @@ max-height: 294px;
     text-transform: uppercase;
     color:$whitecolor;
 
+    @include tablet {
+    font-family: $fontRoboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:$whitecolor;}
+
     &-background{
+        margin-bottom: 22px;
+        width: 95%;
+// height: auto;
         position: absolute;
          bottom: 0;
          left:0;
          right: 0;
          padding: 27px 10px;
          background-color:rgba(47, 48, 58, 0.8);
+
+         @include tablet {
+margin-bottom: 0px;
+width: 100%;
+            position: absolute;
+            bottom: 0;
+            left:0;
+            right: 0;
+            padding: 27px 10px;
+            background-color:rgba(47, 48, 58, 0.8);
+
+         }
+
+         @include desktop {
+            
+width: 370px;
+            position: absolute;
+            bottom: 0;
+            left:0;
+            right: 0;
+            padding: 27px 10px;
+            background-color:rgba(47, 48, 58, 0.8);
+         }
+
        }
     }
     
 }
 
 .about-us__title {
-    // nonoe
+   
    
     
     // visibility: hidden;

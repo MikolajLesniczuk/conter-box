@@ -1,3 +1,13 @@
+.foto {
+width: 95%;
+height: auto;
+margin-left: 10px;
+@include tablet {
+    width: 370px;
+        height: 294px;
+    }
+}
+
 
 .images{
     padding-bottom: 94px;
