@@ -11,23 +11,23 @@
     background-repeat: no-repeat;
     margin: 0 auto;
     background-image:linear-gradient(rgba(47, 48, 58, 0.4),
-     rgba(47, 48, 58, 0.4)), url(../images/foto-desktop/conter-box.jpeg);
+     rgba(47, 48, 58, 0.4)), url(./images/konter/conter-box.jpeg);
      @media (min-device-pixel-ratio: 2),
      (min-resolution: 192dpi),
      (min-resolution: 2dppx) {
      
-       background-image: url(../images/foto-desktop/conter-box.jpeg);
+       background-image: url(./images/konter/conter-box.jpeg);
      }
 
 @include tablet {
     background-image:linear-gradient(rgba(47, 48, 58, 0.4),
-     rgba(47, 48, 58, 0.4)), url(../images/foto-desktop/conter-box.jpeg) ;
+     rgba(47, 48, 58, 0.4)), url(./images/konter/conter-box.jpeg) ;
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     
-      background-image: url(../images/foto-desktop/conter-box.jpeg);
+      background-image: url(./images/konter/conter-box.jpeg);
   
 }
 
@@ -37,13 +37,13 @@
     max-width:1600px;
     height: 600px;
     background-image:linear-gradient(rgba(47, 48, 58, 0.4),
-     rgba(47, 48, 58, 0.4)), url(../images/foto-desktop/conter-box.jpeg) ;
+     rgba(47, 48, 58, 0.4)), url(./images/konter/conter-box.jpeg) ;
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     
-      background-image: url(../images/foto-desktop/conter-box.jpeg);
+      background-image: url(./images/konter/conter-box.jpeg);
   
 }
 
