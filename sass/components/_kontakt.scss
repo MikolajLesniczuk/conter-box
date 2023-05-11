@@ -1,0 +1,141 @@
+.imie {
+    width: 90%;
+    margin: 30px auto 0 auto;
+color: red;
+font-size: 30px;
+    @include desktop{
+  margin-bottom: 20px;
+    font-size: 40px;
+    margin-left: 100px;
+    width: 100%;}
+}
+
+.stanowisko {
+font-size: 40px;
+
+    // margin-top: 60px;
+    width: 90%;
+    margin: 50px auto 0px auto ;
+    @include desktop {
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    }
+}
+
+.kontakt{
+    width: 90%;
+    margin: 60px auto 0 auto;
+
+    @include tablet {
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    @include desktop {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    }
+}
+
+.tel{
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+@include tablet {
+    width: 100%;
+margin-left: 20px;
+
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+   padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+    @include desktop {
+    margin-left: 100px;
+
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+   padding-bottom: 20px;
+    border-bottom: 2px solid black;
+    max-width: 600px;
+    
+    }
+   
+    
+}
+.mail{
+
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    @include desktop {
+    margin-left: 100px;
+    margin-top: 20px;}
+
+    
+}
+
+.listazkontaktem {
+display: flex;
+flex-direction: column;
+margin-top: 20px;
+
+}
+
+.kontakttyl{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+    @include desktop {
+        max-width: 1200px;
+    }
+}
+.mapa{
+   border: none;
+    width: 100%;
+
+
+    @include tablet{
+        width: 100%;
+        height: 600px;
+        
+    }
+    @include desktop{
+        
+        width: 100%;
+        height: 600px;
+        
+
+    }
+}
+
+.bordermapy{
+max-width: 450px;
+margin: 40px auto 40px auto;
+width: 100%;
+height: auto;
+
+@include tablet {
+    margin: 40px auto 60px auto;
+    width: 100%;
+    // margin-left: 100px;
+    max-width: 600px;
+    // border: 3px solid black;
+}
+
+
+    @include desktop {
+
+        width: 90%;
+max-width: 1200px;
+margin: 40px auto 60px auto;
+    // border: 3px solid black;
+    
+}
+
+}
