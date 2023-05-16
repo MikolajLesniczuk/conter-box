@@ -98,12 +98,53 @@
       </section>
 
 
-      <section>
+      <section class="tekstonas">
 
 
 <h2 class="kilkaslow">Kilka słów o Nas</h2>
-<p class="onas">Nasza firma zajmuje się produkcją kontenerów i domków modułowych... </p>
- <p class="onas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis facere aliquam labore tenetur? Deleniti, quis, autem ex voluptas, assumenda expedita corrupti veritatis ad delectus soluta earum et hic laboriosam at!</p>
+<p class="onas">Firma KONTER-BOX zajmuję się produkcją dowolnie konfigurowanych obiektów
+  kontenerowych, które doskonale sprawdzą się w różnych zastosowaniach. Nasze obiekty są
+  wszechstronne i dostosowane do spełniania różnorodnych funkcji, w tym jako biura, obiekty
+  handlowo-usługowe, zaplecza magazynowe, obiekty socjalne, sanitarne, mieszkalne i wiele
+  innych.
+  Dzięki elastyczności naszych kontenerów możemy dostosować je do indywidualnych potrzeb
+  naszych klientów. Projektujemy i budujemy obiekty o różnych rozmiarach, układach wnętrz i
+  wyposażeniu, aby sprostać wymaganiom konkretnego zastosowania.
+  Dzięki naszemu doświadczeniu i zaawansowanej technologii jesteśmy w stanie zapewnić
+  klientom obiekty kontenerowe dostosowane do ich indywidualnych potrzeb. Nasze
+  rozwiązania są mobilne, modułowe i łatwe w montażu, co umożliwia szybkie i elastyczne
+  dostosowanie do zmieniających się wymagań.
+  Skontaktuj się z nami, aby poznać więcej szczegółów i zobaczyć, jak możemy dostosować
+  nasze obiekty kontenerowe do Twoich potrzeb. </p>
+
+  <h3 class="kilkaslow">KONTENERY BIUROWE</h3>
+ <p class="onas">Nasze biura kontenerowe są idealnym rozwiązaniem dla firm potrzebujących przestrzeni biurowej,
+  placówek handlowo-usługowych czy też dodatkowej przestrzeni dla personelu. Mogą być wyposażone
+  w niezbędne instalacje, takie jak oświetlenie, klimatyzacja, ogrzewanie i zaplecze sanitarne.</p>
+
+  <h3 class="kilkaslow">KONTENERY MAGAZYNOWE</h3>
+  <p class="onas">Obiekty kontenerowe mogą również pełnić funkcję zaplecza magazynowego, umożliwiając
+    przechowywanie towarów, narzędzi i innych przedmiotów. Dzięki ich konstrukcji są odporne na
+    warunki atmosferyczne i zapewniają bezpieczne miejsce przechowywania.</p>
+  <h3 class="kilkaslow">KONTENERY SANITARNE</h3>
+  <p class="onas">Nasze kontenery można również przystosować do celów socjalnych, dostarczając wygodne
+    pomieszczenia sanitarne, takie jak toalety i prysznice, na miejscach budowy, festiwalach czy innych
+    wydarzeniach. Mobilność kontenerów sanitarnych sprawia, że można je łatwo przemieszczać, co
+    jest bardzo praktyczne dla firm, które prowadzą prace budowlane na różnych placach lub
+    działkowiczów posiadających więcej niż jedną działkę.</p>
+  <h3 class="kilkaslow">STRÓŻÓWKI</h3>
+  <p class="onas">Oferujemy specjalnie zaprojektowane stróżówki kontenerowe, które stanowią rozwiązanie dla potrzeb
+    związanych z bezpieczeństwem i nadzorem. Nasze stróżówki są wygodne, funkcjonalne i dostosowane 
+    do spełniania roli mobilnych punktów kontrolnych. Dzięki swojej stalowej konstrukcji, stróżówki
+    kontenerowe są łatwe do przetransportowania, co pozwala na elastyczne ustawienie ich w różnych
+    lokalizacjach w zależności od potrzeb.</p>
+  <h3 class="kilkaslow">KONTENERY MIESZKALNE</h3>
+  <p class="onas">Nasze obiekty mieszkalno-kontenerowe oferują wygodne i funkcjonalne rozwiązanie. Możemy
+    dostosować je pod względem ilości pokoi, kuchni, łazienek oraz wyposażenia, tak aby spełniały
+    potrzeby zarówno krótkoterminowego, jak i długoterminowego zamieszkania. Dzięki wykorzystywaniu
+    płyt o rdzeniu poliuretanowym osiągamy bardzo dobrą termoizolację. Dodatkowo płyty te wykazują
+    wyjątkowe właściwości hydroizolacyjne, dźwiękochłonne, a także są odporne na procesy gnilne.</p>
+ 
 
       </section>
 
@@ -533,68 +574,46 @@
       <div class="modal" >
         <button type="button" class="modal--close " data-modal-close>X
 </button>
-
-<form>
+<form action="send_email.php" method="POST">
   <p class="form-data">Zostaw swoje dane i podaj szczegóły</p>
   <ul>
-  <li class="form-list">
-    <label for="name" class="form-list__label">Imie</label>
-    <div class="form-list__backbox">
-    <input class="form-list__input" id="name" name="Username" type="text" />
-    <svg class="form-list__svg" width="18" height="18">
-      <use href="./images/icons.svg#icon-person"></use>
-    </svg>
-  </div>
-  </li>
-  <li class="form-list">
-    <label for="telephone" class="form-list__label">Telefon</label>
-    <div class="form-list__backbox">
-    <input class="form-list__input" id="telephone" name="Usertelephone" type="text"/>
-    <svg class="form-list__svg" width="18" height="18">
-      <use href="./images/icons.svg#icon-phone"></use>
-    </svg>
-    </div>
+    <li class="form-list">
+      <label for="name" class="form-list__label">Imię</label>
+      <div class="form-list__backbox">
+        <input class="form-list__input" id="name" name="name" type="text" />
+        <svg class="form-list__svg" width="18" height="18">
+          <use href="./images/icons.svg#icon-person"></use>
+        </svg>
+      </div>
     </li>
     <li class="form-list">
-    <label for="email" class="form-list__label">Email</label>
-    <div class="form-list__backbox">
-    <input class="form-list__input" id="email" name="email" type="email"/>
-    <svg class="form-list__svg" width="18" height="18">
-      <use href="./images/icons.svg#icon-email"></use>
-    </svg>
-  </div>
+      <label for="telephone" class="form-list__label">Telefon</label>
+      <div class="form-list__backbox">
+        <input class="form-list__input" id="telephone" name="telephone" type="text" />
+        <svg class="form-list__svg" width="18" height="18">
+          <use href="./images/icons.svg#icon-phone"></use>
+        </svg>
+      </div>
     </li>
     <li class="form-list">
-    <label for="comment" class="form-list__label">Szczegóły</label>
-    
-    <textarea class="form-list__textarea" placeholder="Wprowadź tekst"></textarea>
+      <label for="email" class="form-list__label">Email</label>
+      <div class="form-list__backbox">
+        <input class="form-list__input" id="email" name="email" type="email" />
+        <svg class="form-list__svg" width="18" height="18">
+          <use href="./images/icons.svg#icon-email"></use>
+        </svg>
+      </div>
     </li>
- <!-- <li class="form-list">
-    <label class="form-label">
-      <input class="form-label__checkbox" id="checkbox" type="checkbox" name="checkbox"/>
+    <li class="form-list">
+      <label for="comment" class="form-list__label">Szczegóły</label>
+      <textarea class="form-list__textarea" name="comment" placeholder="Wprowadź tekst"></textarea>
+    </li>
+    <li class="form-list form-list__button">
+      <button class="button-form-modal" type="submit">Wyślij</button>
+    </li>
+  </ul>
+</form>
 
-  <svg class="form-label__svg" width="13" height="10"><use href="./images/icons.svg#icon-check">
-
-  </use></svg>
-      
-     
- 
-
- <span class="form-label__term">
-  Oświadczam iż akceptuję
-  <a class="form-label__statute" >Regulamin</a>
-  i
-  <a class="form-label__statute">Politykę Prywatności.</a></span>
-
-</label>
- </li> -->
- <li class="form-list form-list__button">
-        <button class="button-form-modal" type="submit">Wyślij</button>
-      </li>
-   
-      </ul>
-      </form>
-  
       </div>
       </div>
     </div>
